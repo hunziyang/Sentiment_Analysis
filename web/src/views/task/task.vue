@@ -1,21 +1,9 @@
 <template>
 <div>
     <el-container>
-        <el-aside width="200px">Aside</el-aside>
+        <el-aside width="200px"><as></as></el-aside>
         <el-main>
-            <el-row>
-                <el-upload
-                        class="upload-demo"
-                        ref="upload"
-                        action="/api/upload/checkFile"
-                        limit="1"
-                        accept=".txt"
-                        :on-remove="handleRemove"
-                        :auto-upload="false">
-                    <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
-                    <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
-                </el-upload>
-            </el-row>
+            <router-view/>
         </el-main>
     </el-container>
 </div>
@@ -23,19 +11,15 @@
 
 <script>
     // import {all} from '@/api/homeApi'
+    import aside from '@/components/Aside'
     export default {
         name: "task",
         data () {
             return {
             };
         },
-        methods: {
-            submitUpload() {
-                this.$refs.upload.submit();
-            },
-            handleRemove(file) {
-                return this.$confirm(`确定移除 ${ file.name }？`);
-            }
+        components:{
+            'as':aside
         }
     }
 </script>

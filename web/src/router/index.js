@@ -11,7 +11,18 @@ export default new Router({
     },
     {
       path: '/task',
-      component: () => import('@/views/task/task')
+      component: () => import('@/views/task/task'),
+      redirect: '/create',
+      children:[
+        {
+          path: '/create',
+          component: () => import('@/views/task/create'),
+        },
+        {
+          path: '/my',
+          component: () => import('@/views/task/my'),
+        }
+      ]
     }
   ]
 })
