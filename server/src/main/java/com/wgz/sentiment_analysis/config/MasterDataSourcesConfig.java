@@ -19,7 +19,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.wdy.framework.dao", sqlSessionTemplateRef = "masterSqlSessionTemplate")
+@MapperScan(basePackages = "com.wgz.sentiment_analysis.dao", sqlSessionTemplateRef = "masterSqlSessionTemplate")
 public class MasterDataSourcesConfig {
 
     @Bean(name = "masterDataSource")
