@@ -1,15 +1,23 @@
 <template>
 <div>
-    <el-upload
-            class="upload-demo"
-            ref="upload"
-            action="/api/upload/checkFile"
-            :on-preview="handlePreview"
-            :on-success="uploadSuccess"
-            :auto-upload="false">
-        <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
-        <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
-    </el-upload>
+    <el-container>
+        <el-aside width="200px">Aside</el-aside>
+        <el-main>
+            <el-row>
+                <el-upload
+                        class="upload-demo"
+                        ref="upload"
+                        action="/api/upload/checkFile"
+                        limit="1"
+                        accept=".txt"
+                        :on-remove="handleRemove"
+                        :auto-upload="false">
+                    <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
+                    <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
+                </el-upload>
+            </el-row>
+        </el-main>
+    </el-container>
 </div>
 </template>
 
@@ -25,14 +33,8 @@
             submitUpload() {
                 this.$refs.upload.submit();
             },
-            uploadSuccess(res){
-                console.log(res);
-            },
-            handleRemove(file, fileList) {
-                console.log(file, fileList);
-            },
-            handlePreview(file) {
-                console.log(file);
+            handleRemove(file) {
+                return this.$confirm(`确定移除 ${ file.name }？`);
             }
         }
     }
