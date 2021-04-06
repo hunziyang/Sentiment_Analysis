@@ -15,7 +15,7 @@ public class RedisSequence {
     private RedisTemplate redisTemplate;
 
     public String getTicket() {
-        return TimeUtil.getTime(new Date()) + getSuffix(String.valueOf(getID()));
+        return "T" + TimeUtil.getSimpleDateFormatTime(new Date()) + getSuffix(String.valueOf(getID()));
     }
 
     private String getSuffix(String id) {

@@ -6,6 +6,7 @@
         <result property="id" column="ID" jdbcType="INTEGER"/>
         <result property="ticket" column="TICKET" jdbcType="VARCHAR"/>
         <result property="uid" column="UID" jdbcType="INTEGER"/>
+        <result property="status" column="STATUS" jdbcType="INTEGER"/>
         <result property="isdone" column="ISDONE" jdbcType="BOOLEAN"/>
         <result property="revision" column="REVISION" jdbcType="INTEGER"/>
         <result property="createdBy" column="CREATED_BY" jdbcType="VARCHAR"/>

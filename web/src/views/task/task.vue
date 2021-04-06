@@ -10,7 +10,6 @@
 </template>
 
 <script>
-    // import {all} from '@/api/homeApi'
     import aside from '@/components/Aside'
     export default {
         name: "task",

@@ -22,6 +22,10 @@ public class Ticket {
      */
     private Long uid;
     /**
+     * STATUS
+     */
+    private Integer status;
+    /**
      * ISDONE
      */
     private Boolean isdone;
