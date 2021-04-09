@@ -7,7 +7,8 @@
         <result property="ticket" column="TICKET" jdbcType="VARCHAR"/>
         <result property="uid" column="UID" jdbcType="INTEGER"/>
         <result property="status" column="STATUS" jdbcType="INTEGER"/>
-        <result property="isdone" column="ISDONE" jdbcType="BOOLEAN"/>
+        <result property="isDone" column="ISDONE" jdbcType="BOOLEAN"/>
+        <result property="endTime" column="END_TIME" jdbcType="TIMESTAMP"/>
         <result property="revision" column="REVISION" jdbcType="INTEGER"/>
         <result property="createdBy" column="CREATED_BY" jdbcType="VARCHAR"/>
         <result property="createdTime" column="CREATED_TIME" jdbcType="TIMESTAMP"/>

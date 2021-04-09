@@ -12,4 +12,8 @@
         <result property="updatedBy" column="UPDATED_BY" jdbcType="VARCHAR"/>
         <result property="updatedTime" column="UPDATED_TIME" jdbcType="TIMESTAMP"/>
     </resultMap>
+
+    <select id="getFilePath" resultMap="SysUploadMap">
+        SELECT * FROM sys_upload su LEFT JOIN sys_ticket st ON su.ID = st.UID WHERE st.ID = #{id}
+    </select>
 </mapper>

@@ -11,31 +11,42 @@ public class Ticket {
     /**
      * ID
      */
-    @TableId(type = IdType.AUTO)
+    @TableId(value = "ID", type = IdType.AUTO)
     private Long id;
     /**
      * TICKET
      */
+    @TableField(value = "TICKET")
     private String ticket;
     /**
      * UID
      */
+    @TableField(value = "UID")
     private Long uid;
     /**
      * STATUS
      */
+    @TableField(value = "STATUS")
     private Integer status;
     /**
      * ISDONE
      */
-    private Boolean isdone;
+    @TableField(value = "ISDONE")
+    private Boolean isDone;
+    /**
+     * END_TIME
+     */
+    @TableField(value = "END_TIME")
+    private Date endTime;
     /**
      * 乐观锁
      */
+    @TableField(value = "REVISION")
     private Integer revision;
     /**
      * 创建人
      */
+    @TableField(value = "CREATED_BY")
     private String createdBy;
     /**
      * 创建时间
@@ -45,6 +56,7 @@ public class Ticket {
     /**
      * 更新人
      */
+    @TableField(value = "UPDATED_BY")
     private String updatedBy;
     /**
      * 更新时间
