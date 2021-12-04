@@ -1,12 +1,10 @@
 package com.wgz.sentiment_analysis.service;
 
-import com.github.pagehelper.PageInfo;
-import com.wgz.sentiment_analysis.vo.PageTicketVo;
-import com.wgz.sentiment_analysis.vo.TicketSearchVo;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wgz.sentiment_analysis.entity.Ticket;
+import com.wgz.sentiment_analysis.vo.TicketVo;
 
-public interface TicketService {
-    String createTicket(Long uid);
-    PageInfo<PageTicketVo> getPageTicket(TicketSearchVo ticketSearchVo);
-    String seeFile(Long id);
+public interface TicketService extends IService<Ticket> {
 
+    void insertTicket(TicketVo ticketVo);
 }

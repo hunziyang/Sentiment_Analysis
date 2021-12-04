@@ -3,64 +3,58 @@ package com.wgz.sentiment_analysis.entity;
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.Date;
+import java.io.Serializable;
 
+/**
+ *  (Ticket)实体类
+ *
+ * @author makejava
+ * @since 2021-12-04 16:38:30
+ */
 @Data
-@TableName("sys_ticket")
-public class Ticket {
+@TableName("ticket")
+public class Ticket implements Serializable {
+    private static final long serialVersionUID = -11570397254556683L;
     /**
      * ID
      */
-    @TableId(value = "ID", type = IdType.AUTO)
+    @TableId(type = IdType.AUTO)
     private Long id;
     /**
-     * TICKET
+     * 文本
      */
-    @TableField(value = "TICKET")
-    private String ticket;
+    private String text;
     /**
-     * UID
+     * 结果
      */
-    @TableField(value = "UID")
-    private Long uid;
+    private Boolean result;
     /**
-     * STATUS
+     * 完成
      */
-    @TableField(value = "STATUS")
-    private Integer status;
-    /**
-     * ISDONE
-     */
-    @TableField(value = "ISDONE")
-    private Boolean isDone;
-    /**
-     * END_TIME
-     */
-    @TableField(value = "END_TIME")
-    private Date endTime;
+    private Boolean finish;
     /**
      * 乐观锁
      */
-    @TableField(value = "REVISION")
     private Integer revision;
     /**
      * 创建人
      */
-    @TableField(value = "CREATED_BY")
     private String createdBy;
     /**
      * 创建时间
      */
     @TableField(value = "CREATED_TIME", fill = FieldFill.INSERT)
-    private Date createdTime;
+    private LocalDateTime createdTime;
     /**
      * 更新人
      */
-    @TableField(value = "UPDATED_BY")
     private String updatedBy;
     /**
      * 更新时间
      */
     @TableField(value = "UPDATED_TIME", fill = FieldFill.INSERT_UPDATE)
-    private Date updatedTime;
+    private LocalDateTime updatedTime;
 }
+

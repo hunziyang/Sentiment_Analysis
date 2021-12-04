@@ -1,7 +1,9 @@
 package com.wgz.sentiment_analysis.enums;
 
 public enum RedisKey {
-    TICKET(1,"ticket","ticket");
+    TICKET(1,"ticket","ticket"),
+    WAIT(2,"wait","wait"),
+    START(3,"start","start");
 
     private int id;
     private String key;

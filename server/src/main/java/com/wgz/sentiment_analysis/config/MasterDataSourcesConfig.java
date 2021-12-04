@@ -32,13 +32,10 @@ public class MasterDataSourcesConfig {
     @Bean(name = "masterSqlSessionFactory")
     public SqlSessionFactory sqlSessionFactory(@Qualifier("masterDataSource") DataSource dataSource) throws Exception {
         MybatisSqlSessionFactoryBean bean = new MybatisSqlSessionFactoryBean();
-        // 不配置Mybatis-plus的自动注入不生效
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setMetaObjectHandler(new MyBatisPlusMetaObjectHandler());
         bean.setGlobalConfig(globalConfig);
-        // mybatis-plus配置类
         MybatisConfiguration configuration = new MybatisConfiguration();
-        // 控制台展示sql
         configuration.setLogImpl(StdOutImpl.class);
         bean.setConfiguration(configuration);
         bean.setDataSource(dataSource);
