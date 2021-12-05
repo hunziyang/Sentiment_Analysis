@@ -1,5 +1,6 @@
 package com.wgz.sentiment_analysis.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -40,7 +41,9 @@ public class TicketServiceImpl extends ServiceImpl<TicketMapper, Ticket> impleme
     @Override
     public PageInfo<Ticket> selectTicket(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum,pageSize);
-        List<Ticket> tickets = ticketMapper.selectList(null);
+        LambdaQueryWrapper<Ticket> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.orderByDesc(Ticket::getId);
+        List<Ticket> tickets = ticketMapper.selectList(lambdaQueryWrapper);
         return new PageInfo<Ticket>(tickets);
     }
 
