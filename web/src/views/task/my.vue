@@ -1,5 +1,8 @@
 <template>
-    <div align="center">
+    <div>
+        <el-row type="flex" justify="end">
+            <el-button type="primary" @click="search">刷新</el-button>
+        </el-row>
         <el-row>
             <el-table
                     :data="taskAll"
@@ -14,7 +17,7 @@
                 <el-table-column
                         prop="text"
                         label="检测内容"
-                        width="180">
+                        width="1032">
                 </el-table-column>
                 <el-table-column
                         prop="createdTime"

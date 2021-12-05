@@ -32,6 +32,7 @@
                         message: '创建任务成功',
                         type: 'success'
                     });
+                    this.$router.push('/my');
                 }).catch(err => {
                     this.$message.error('创建任务失败,err:'+err);
                 })

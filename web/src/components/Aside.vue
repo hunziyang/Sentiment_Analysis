@@ -5,9 +5,8 @@
                     default-active="$route.path"
                     class="el-menu-vertical-demo"
                     router>
-                <el-submenu index="/task">
+                <el-submenu index="/task" >
                     <template slot="title">
-                        <i class="el-icon-location"></i>
                         <span>Sentiment_Analysis</span>
                     </template>
                     <el-menu-item index="/create">
