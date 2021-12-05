@@ -7,25 +7,13 @@
                     :border="true"
                     style="width: 100%">
                 <el-table-column
-                        v-if='false'
                         prop="id"
                         label="ID"
                         width="180">
                 </el-table-column>
                 <el-table-column
-                        v-if='false'
-                        prop="uid"
-                        label="上传单号"
-                        width="180">
-                </el-table-column>
-                <el-table-column
-                        prop="ticket"
-                        label="任务单号"
-                        width="180">
-                </el-table-column>
-                <el-table-column
-                        prop="status"
-                        label="任务状态"
+                        prop="text"
+                        label="检测内容"
                         width="180">
                 </el-table-column>
                 <el-table-column
@@ -35,14 +23,9 @@
                         width="200">
                 </el-table-column>
                 <el-table-column
-                        prop="isDone"
+                        prop="finish"
                         label="是否完成"
                         :formatter="formatBoolean"
-                        width="180">
-                </el-table-column>
-                <el-table-column
-                        prop="endTime"
-                        label="任务完成时间"
                         width="180">
                 </el-table-column>
                 <el-table-column
@@ -51,10 +34,7 @@
                     <template slot-scope="scope">
                         <el-tooltip class="item" effect="dark" content="查看" placement="top-start">
                             <el-button type="info" icon="el-icon-view" circle
-                                       @click="seeFile(scope.row.id)"></el-button>
-                        </el-tooltip>
-                        <el-tooltip class="item" effect="dark" content="下载" placement="top-start">
-                            <el-button type="success" icon="el-icon-download" circle></el-button>
+                                       @click="seeFile(scope.row)"></el-button>
                         </el-tooltip>
                     </template>
                 </el-table-column>
@@ -72,7 +52,7 @@
             </el-pagination>
         </el-row>
         <el-drawer
-                title="待检测内容"
+                title="检测结果"
                 :visible.sync="drawer"
                 :direction="direction">
             <el-input
@@ -95,9 +75,7 @@
             return {
                 query: {
                     pageNum: 1,
-                    pageSize: 20,
-                    startTime: '',
-                    endTime: ''
+                    pageSize: 20
                 },
                 taskAll: [],
                 total: 0,
@@ -147,10 +125,14 @@
                     this.$message.error('查询失败,err:' + err);
                 })
             },
-            seeFile(id) {
+            seeFile(row) {
+                if (row.finish == false){
+                    this.$message.error('任务还未完成');
+                    return;
+                }
                 const _this = this;
                 _this.drawer = true;
-                seeFile(id).then(res => {
+                seeFile(row.id).then(res => {
                     _this.textarea = res;
                 }).catch(err => {
                     this.$message.error('查询失败,err:' + err);

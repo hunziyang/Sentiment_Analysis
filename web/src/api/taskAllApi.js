@@ -2,14 +2,14 @@ import request from '@/utils/request'
 
 export function search(params) {
     return request({
-        url: '/ticket/search',
-        method: 'post',
+        url: '/tickets?pageNum='+params.pageNum+"&pageSize="+params.pageSize,
+        method: 'get',
         data: params
     })
 }
 export function seeFile(params) {
     return request({
-        url: '/ticket/seeFile/'+params,
-        method: 'post'
+        url: '/see?id='+params,
+        method: 'get'
     })
 }

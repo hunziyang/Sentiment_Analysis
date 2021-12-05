@@ -1,8 +1,9 @@
 import request from '@/utils/request'
 
-export function create (uid) {
+export function create (params) {
   return request({
-    url: '/ticket/create?uid='+uid,
-    method: 'get'
+    url: '/tickets',
+    method: 'post',
+    data: params
   })
 }
