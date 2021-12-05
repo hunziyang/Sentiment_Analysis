@@ -41,8 +41,7 @@ public class TicketServiceImpl extends ServiceImpl<TicketMapper, Ticket> impleme
     public PageInfo<Ticket> selectTicket(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum,pageSize);
         List<Ticket> tickets = ticketMapper.selectList(null);
-        PageInfo<Ticket> pageInfo = new PageInfo<>(tickets);
-        return pageInfo;
+        return new PageInfo<Ticket>(tickets);
     }
 
     @Override

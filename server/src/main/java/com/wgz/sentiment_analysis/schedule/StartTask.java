@@ -52,8 +52,10 @@ public class StartTask {
                 new Thread(errClog).start();
                 process.waitFor();
                 process.destroy();
-                ticket.setFinish(true);
-                ticketMapper.updateById(ticket);
+                Ticket t = new Ticket();
+                t.setId(ticket.getId());
+                t.setFinish(true);
+                ticketMapper.updateById(t);
                 log.info(id + "----end");
             } catch (Exception e) {
                 e.printStackTrace();
