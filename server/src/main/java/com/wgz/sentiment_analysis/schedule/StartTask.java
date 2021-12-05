@@ -10,10 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 @Component
 @Slf4j
@@ -23,6 +20,10 @@ public class StartTask {
     private CacheService cacheService;
     @Autowired
     private TicketMapper ticketMapper;
+    @Value("${py.path}")
+    private String pyPath;
+    @Value("${py.file.path}")
+    private String pyFilePath;
 
     @Scheduled(cron = "0/10 * * * * ? ")
     public void startTask() {
@@ -36,8 +37,8 @@ public class StartTask {
                 Ticket ticket = ticketMapper.selectById(Long.valueOf(id));
                 Process process;
                 log.info(id + "----start");
-                String cmd = "/usr/yang/anaconda/envs/tensorflow/bin/python /usr/yang/tensorflow/params.py "+ ticket.getText() + " " +ticket.getId();
-                log.info("cmd:"+cmd);
+                String cmd = pyPath + " " + pyFilePath + " " + ticket.getText() + " " + ticket.getId();
+                log.info("cmd:" + cmd);
                 process = Runtime.getRuntime().exec(cmd);
                 //获取进程的标准输入流
                 InputStream in = process.getInputStream();

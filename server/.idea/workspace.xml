@@ -2,41 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c4e227-7060-40b2-8fcb-4082ef0d3c38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/ExceptionHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/ClogThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/vo/TicketVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/SentimentAnalysisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/SentimentAnalysisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/FastJsonWraper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/GenericFastJson2JsonRedisSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MasterDataSourcesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MasterDataSourcesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MyBatisPlusMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MyBatisPlusMetaObjectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/dao/TicketMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/dao/TicketMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/dao/UploadMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/entity/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/entity/Upload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/enums/RedisKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/enums/RedisKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/UploadService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/UploadServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/vo/PageTicketVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/vo/TicketSearchVo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UploadMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/controller/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/controller/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/schedule/StartTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/schedule/StartTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/service/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/service/TicketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sentiment_analysis-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/sentiment_analysis-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sentiment_analysis-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/sentiment_analysis-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../web/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -86,95 +67,53 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="874">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="25" />
+              <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/CacheService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/CacheServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+            <state relative-caret-position="912">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/ClogThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MasterDataSourcesConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MyBatisPlusMetaObjectHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/SentimentAnalysisApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#696#708#1" expanded="true" />
+                <element signature="e#748#765#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,8 +122,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state relative-caret-position="520">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#966#982#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,23 +186,23 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TicketMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/dao/TicketDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/vo/TickectVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/vo/TicketVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/entity/Ticket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/ExceptionHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/dao/TicketMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/CacheServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/CacheService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/MyBatisPlusMetaObjectHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/ClogThread.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java" />
       </list>
     </option>
   </component>
@@ -288,7 +240,7 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1270" />
     <option name="y" value="-10" />
     <option name="width" value="1300" />
@@ -343,15 +295,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sentiment_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sentiment_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sentiment_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,16 +314,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sentiment_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sentiment_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sentiment_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sentiment_analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -483,15 +416,15 @@
       <workItem from="1626876820314" duration="638000" />
       <workItem from="1628400096842" duration="628000" />
       <workItem from="1638603138002" duration="17460000" />
-      <workItem from="1638624207029" duration="3212000" />
+      <workItem from="1638624207029" duration="8865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79810000" />
+    <option name="totallyTimeSpent" value="85463000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1136" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1136" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2020958" />
@@ -708,33 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -759,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/config/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -773,13 +672,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -826,19 +718,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/SentimentAnalysisApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="133">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -846,17 +728,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="520">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/schedule/StartTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="912">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#696#708#1" expanded="true" />
+            <element signature="e#748#765#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/service/impl/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#966#982#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wgz/sentiment_analysis/controller/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
